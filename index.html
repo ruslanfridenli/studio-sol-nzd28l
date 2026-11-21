@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Studio Sol — Synth Pad</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>≋ studio sol — synth pad</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="controls">Controls</h2><div class="btncol">
+<button id="start" class="primary" data-i="start">▶ Start drone</button>
+<button id="stop" data-i="stop">■ Stop</button></div></section>
+<section><h2 data-i="params">Parameters</h2>
+<label><span data-i="root">Root note</span><select id="root"><option>C2</option><option>C#2</option><option>D2</option><option>D#2</option><option>E2</option><option>F2</option><option>F#2</option><option>G2</option><option>G#2</option><option>A2</option><option>A#2</option><option>B2</option></select></label>
+<label><span data-i="wave">Waveforms</span><select id="wave"><option value="sine">sine</option><option value="triangle">triangle</option><option value="sine">sine</option><option value="triangle">triangle</option><option value="sawtooth">sawtooth</option><option value="square">square</option></select></label>
+<label><span data-i="detune">Detune</span><input type="range" id="detune" min="0" max="50" value="12"></label>
+<label><span data-i="cutoff">Filter cutoff</span><input type="range" id="cutoff" min="100" max="8000" value="1200"></label>
+<label><span data-i="reso">Resonance</span><input type="range" id="reso" min="0" max="20" value="4"></label>
+<label><span data-i="lfo">LFO rate</span><input type="range" id="lfo" min="0" max="8" step="0.1" value="0.5"></label>
+<label><span data-i="lfoamt">LFO depth</span><input type="range" id="lfod" min="0" max="100" value="30"></label>
+<label><span data-i="vol">Volume</span><input type="range" id="vol" min="0" max="100" value="60"></label></section>
+</aside><div class="stage"><canvas id="cv"></canvas></div></main>
+<script src="app.js"></script></body></html>
